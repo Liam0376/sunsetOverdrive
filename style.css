@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    /* Fondo de página por defecto */
+    background-image: url('img/fondo_default.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* El fondo no se mueve con el scroll */
+    color: #FFFFFF;
+    transition: background-image 0.5s ease; /* Transición suave del fondo */
+}
+
+/* Contenedor principal para centrar contenido */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semitransparente */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    color: #FF4500; /* Naranja vibrante, como el juego */
+    font-size: 3em;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* ID de la imagen principal */
+#personaje {
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    object-fit: contain; /* Asegura que la imagen se vea completa sin deformarse */
+    margin-bottom: 25px;
+    border: 3px solid #FF4500;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Contenedor de los botones */
+#controles {
+    /* Requisito: Alinear botones horizontalmente */
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    align-items: center;
+    gap: 15px; /* Espacio entre botones */
+    flex-wrap: wrap; /* Si no caben, se van abajo */
+}
+
+/* Clase para los botones (imágenes) */
+.boton-arma {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%; /* Botones redondos */
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.boton-arma:hover {
+    transform: scale(1.1); /* Efecto al pasar el mouse */
+    box-shadow: 0 0 15px #FF4500; /* Brillo naranja */
+}
+
+/* Botón de Reset */
+#reset-button {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #FF4500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#reset-button:hover {
+    background-color: #CC3700;
+}
